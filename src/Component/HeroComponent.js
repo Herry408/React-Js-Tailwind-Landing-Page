@@ -1,8 +1,9 @@
 import React from "react";
+import Hero from "./images/Hero.jpg";
 
 function HeroComponent() {
   return (
-    <div className="w-full z-10 mt-2">
+    <div className="w-full mt-2">
       <div className="flex justify-between items-center text-centerlg:text-left px-8 md:px-12 lg:w-1/2">
         <div>
           <h2 className="text-3xl font-semibold text-gray-800 md:text-4xl">
@@ -25,9 +26,9 @@ function HeroComponent() {
             </button>
           </div>
         </div>
-        <div className="h-screen ">
+        <div className="h-screen object-cover">
           <div>
-            <image src="./images/Hero.jpg" alt="image" />
+            <img src={Hero} alt="image" />
           </div>
         </div>
       </div>
