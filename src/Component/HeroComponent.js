@@ -26,9 +26,9 @@ function HeroComponent() {
             </button>
           </div>
         </div>
-        <div className="h-screen object-cover">
+        <div className="hidden lg:block lg:w-1/2">
           <div>
-            <img src={Hero} alt="image" />
+            <img className="h-screen object-cover" src={Hero} alt="image" />
           </div>
         </div>
       </div>
