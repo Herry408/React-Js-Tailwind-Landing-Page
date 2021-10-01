@@ -4,7 +4,7 @@ import Hero from "./images/Hero.jpg";
 function HeroComponent() {
   return (
     <div className="w-full z-index-0">
-      <div className="flex justify-between gap-4 items-center text-center px-8 md:px-12 lg:text-left lg:w-50%">
+      <div className="flex justify-between gap-4 items-center text-center px-8 md:px-12 lg:text-left lg:w-3/4">
         <div>
           <h2 className="text-3xl font-semibold text-gray-800 md:text-4xl">
             AMAZING GLOBAL
@@ -26,8 +26,8 @@ function HeroComponent() {
             </button>
           </div>
         </div>
-        <div className="hidden lg:block h-full lg:w-50%">
-          <img src={Hero} alt="image" />
+        <div className="hidden lg:block h-screen lg:w-5/4 lg:flex lg:items-stretch">
+          <img className="h-screen" src={Hero} alt="image" />
         </div>
       </div>
     </div>
