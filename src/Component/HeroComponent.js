@@ -3,8 +3,8 @@ import Hero from "./images/Hero.jpg";
 
 function HeroComponent() {
   return (
-    <div className="w-full mt-2">
-      <div className="flex justify-between items-center text-centerlg:text-left px-8 md:px-12 lg:w-1/2">
+    <div className="w-full z-index-0">
+      <div className="flex justify-between gap-4 items-center text-center px-8 md:px-12 lg:text-left lg:w-50%">
         <div>
           <h2 className="text-3xl font-semibold text-gray-800 md:text-4xl">
             AMAZING GLOBAL
@@ -16,20 +16,18 @@ function HeroComponent() {
             cillum amet qui cillum ad do amet. Non Lorem incididunt sit est aute
             eiusmod do sit qui nostrud consequat deserunt adipisicing ad.
           </p>
-          <div className="flex gap-2 pt-4">
+          <div className="flex gap-2 pt-4 object-center">
             <button className="bg-green-300 text-white font-semibold p-2 block rounded hover:bg-green-500">
               Get Started
             </button>
 
-            <button className="bg-gray-400 text-white font-semibold p-2 block rounded hover:bg-gray-600">
+            <button className="flex bg-gray-400 text-white font-semibold p-2 block rounded hover:bg-gray-600">
               Contact Us
             </button>
           </div>
         </div>
-        <div className="hidden lg:block lg:w-1/2">
-          <div>
-            <img className="h-screen object-cover" src={Hero} alt="image" />
-          </div>
+        <div className="hidden lg:block h-full lg:w-50%">
+          <img src={Hero} alt="image" />
         </div>
       </div>
     </div>

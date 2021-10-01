@@ -7,7 +7,7 @@ function NavbarComponent() {
   return (
     <div className="sticky top-0 bg-white shadow">
       <div className="flex flex-col lg:flex-row">
-        <div className="flex items-center p-2 justify-between px-4 py-4 lg:py-0 shadow lg:shadow-none">
+        <div className="flex items-center p-2 justify-between px-4 py-4 shadow lg:py-0 lg:shadow-none">
           <div>
             <a
               className="uppercase font-semibold text-black text-1x1 p-2"
