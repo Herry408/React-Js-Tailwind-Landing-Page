@@ -4,8 +4,8 @@ import Hero from "./images/Hero.jpg";
 function HeroComponent() {
   return (
     <div className="w-full z-index-0">
-      <div className="flex justify-between gap-4 items-center text-center px-8 md:px-12 lg:text-left lg:w-3/4">
-        <div>
+      <div className="grid lg:grid-cols-2 lg:text-left justify-between gap-4 items-center text-center">
+        <div className="px-10">
           <h2 className="text-3xl font-semibold text-gray-800 md:text-4xl">
             AMAZING GLOBAL
             <span className="text-green-300 font-bold">CONSULTING</span>
@@ -26,8 +26,8 @@ function HeroComponent() {
             </button>
           </div>
         </div>
-        <div className="hidden lg:block h-screen lg:w-5/4 lg:flex lg:items-stretch">
-          <img className="h-screen" src={Hero} alt="image" />
+        <div className="hidden lg:grid lg:grid-cols-1">
+          <img className="h-screen object-cover" src={Hero} alt="image" />
         </div>
       </div>
     </div>
